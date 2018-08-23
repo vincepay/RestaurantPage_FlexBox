@@ -1,0 +1,181 @@
+body,
+div {
+  /*
+  border-color: green;
+  border-width: thick;
+  margin: 10px;
+  border-style:solid;  */
+  /* border:solid;        this is causing problem, w/o border-style, but with this I would get the solid bolder, but it would be black.*/
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family:Lobster,Halvetica,monospace;
+  background-color: rgb(231, 239, 241);
+  /* background-color: rgb(200, 219, 223); */
+  font-size: 50;
+  border-radius: 30px
+}
+
+
+.bottom {
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: whitesmoke;
+  background-color: rgb(231, 239, 241);
+  font-family:Lobster,Halvetica,monospace;
+  font-size: 50;
+
+}
+
+
+#menuBtn,
+#aboutUsLink,
+#logo {
+  /* width : 500px; */
+  background-color: rgb(231, 239, 241);
+  /* background-color: rgb(200, 219, 223); */
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;   
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+
+
+
+/*Note that if logo's width is NOT determined but its container's is (#logo) the logoImg will spill out of the div it is contained in and so
+it has no effect to have the width set for #logo*/
+#logoImg{
+  width: 300px;
+}
+
+/*html { 
+/*  background: url(https://img00.deviantart.net/194f/i/2010/220/0/a/desert_scene_by_arctic_wolf13.jpg)no-repeat center center fixed; 
+/*  -webkit-background-size: cover;
+/*  -moz-background-size: cover;
+/*  -o-background-size: cover;
+/*  background-size: cover;
+/*}
+*/
+html {
+  background: url("https://static1.squarespace.com/static/5b3875b875f9eef54c617b32/t/5b5751972b6a28ce3b675286/1532450214786/IMG_9554-Edit.jpg")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover ;
+}
+
+h1 {
+  text-shadow: 2px 4px 6px black;
+  font-size: 50;
+}
+
+em {
+  display:flex; 
+  font-style: italic;
+  color:white;
+  justify-content: space-around;
+}
+
+aboutUsLink
+#menuBtn {
+  display: flex;
+  height: 100px;
+  border-radius: 30%;
+}
+
+
+
+
+/* images with substring food in their src attribute */
+/* using  [src~="food"] didn't work cuz that selects those that have a whole word 'food' in their src attribute */
+[src*="food"] {
+  width:500px;
+}
+[id*="food"] {
+  display:flex;
+  align-items: center;
+}
+
+#foodImgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  padding: 5px;
+}
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+#food2 {
+  order:1;
+}
+
+#quote {
+  padding: 200px;
+}
+
+/* Trying to create a collapsable menu,in conjunction w/ js */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+#menuList {
+  font-size: small
+}
