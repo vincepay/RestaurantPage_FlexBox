@@ -21,8 +21,10 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family:Lobster,Halvetica,monospace;
+  background-color: rgb(220, 242, 248);
+  /*
   background-color: rgb(231, 239, 241);
-  /* background-color: rgb(200, 219, 223); */
+   background-color: rgb(200, 219, 223); */
   font-size: 50;
   border-radius: 30px
 }
@@ -32,7 +34,6 @@ body {
   display:flex;
   align-items: center;
   justify-content: space-around;
-  background-color: whitesmoke;
   background-color: rgb(231, 239, 241);
   font-family:Lobster,Halvetica,monospace;
   font-size: 50;
@@ -44,7 +45,7 @@ body {
 #aboutUsLink,
 #logo {
   /* width : 500px; */
-  background-color: rgb(231, 239, 241);
+  background-color: rgb(220, 242, 248);
   /* background-color: rgb(200, 219, 223); */
   text-align: center;
   vertical-align: middle;
@@ -96,8 +97,15 @@ aboutUsLink
   display: flex;
   height: 100px;
   border-radius: 30%;
+  text-decoration: none;
 }
 
+/* The following find all 'a' anchor elements that are child of a div element. I use it to remove
+the underline of the link and make the text black and not blue  */
+div > a {
+  color: black;
+  text-decoration: none
+}
 
 
 
